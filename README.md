@@ -140,26 +140,27 @@ Nela é possível visualizar todas as rotas disponíveis, os métodos HTTP, os p
 ---
 
 ## Estrutura simplificada do projeto
-
+```
 .
 ├── database/ # Arquivo do banco SQLite (gerado automaticamente)
 ├── model/
-│ ├── init.py # Inicialização do pacote e configuração da sessão/engine
+│ ├── __init__.py # Inicialização do pacote e configuração da sessão/engine
 │ ├── base.py # Configuração base do SQLAlchemy (Base declarativa)
 │ └── livro.py # Definição da tabela/modelo Livro
 ├── schemas/
-│ ├── init.py # Inicialização do pacote de schemas
+│ ├── __init__.py # Inicialização do pacote de schemas
 │ ├── error.py # Schema padrão de retorno de erros
 │ ├── livro.py # Schemas de validação e serialização do Livro (Pydantic)
 │ └── google_books.py # Schemas da busca e sugestões do Google Books
 ├── services/
-│ ├── init.py # Inicialização do pacote de services
+│ ├── __init__.py # Inicialização do pacote de services
 │ └── google_books_service.py # Lógica de comunicação com a API do Google Books
 ├── app.py # Rotas da API e regras de negócio
 ├── requirements.txt # Dependências do projeto
 ├── Dockerfile # Imagem do backend
 ├── .env # Variáveis de ambiente (chave da API do Google Books)
 └── README.md # Este arquivo
+```
 
 ---
 
