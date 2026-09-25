@@ -1,0 +1,4 @@
+# Ambiente virtual - não deve ir para a imagem (contém dependências
+# que já são reinstaladas via requirements.txt dentro do container)
+venv/
+
